@@ -373,3 +373,55 @@ background: black;
 .btn-card-text:hover {
 color:white; 
 }
+
+/* FAVORITE CONTAINER */
+
+.favorite-container {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.favorite {
+background: white;
+width: Fill (334.67px)px;
+height: Fixed (419px)px;
+padding: 32px 0px 0px 0px;
+gap: 0px;
+border-radius: 12px 0px 0px 0px;
+justify-content: space-between;
+opacity: 0px;
+}
+
+.favorite-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.mini-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Barlow;
+  font-size: 1rem;
+  font-weight: 600;
+ line-height: 1.8rem;
+ text-align: left;
+ color: #5f5f5f;
+}
+
+h5{
+font-family: Barlow;
+font-size: 1.4rem;
+font-weight: 600;
+line-height: 1.8rem;
+text-align: left;
+}
+
+.bold {
+font-weight: bold;
+color: #292929;
+}
+
+
+
