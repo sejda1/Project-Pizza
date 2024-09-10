@@ -82,8 +82,7 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-@media (prefers-color-scheme: light) {
+ @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -94,9 +93,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+
 } */
 
-@import "./reset.css"
+@import "./reset.css";
 
 * {
   padding: 0;
@@ -128,8 +128,8 @@ a {
 /* HEADER */
 
 .header-container {
-  background: url(./assets/iteration-1/home-banner.png);
-  background-size:auto;
+  background: url(public/assets/iteration-1/home-banner.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
@@ -137,7 +137,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 3rem;
+  margin: 0;
   width: 100%;
 }
 
@@ -225,8 +225,6 @@ justify-content: flex-start;
 
  .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
   gap: 1.25rem;
 }
 
@@ -235,35 +233,46 @@ justify-content: flex-start;
   color:#FAF7F2;
   background-size: cover;
   background-position: center;
-  height: 28rem;
 }
 
  .box1{
-  background: url(public/assets/iteration-2/cta/kart-1.png) 
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  background: url(public/assets/iteration-2/cta/kart-1.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-radius: 12px;
  }
  
  .box2{
-  background: url(public/assets/iteration-2/cta/kart-2.png) 
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
- 
+  background: url(public/assets/iteration-2/cta/kart-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  grid-column: 2 ;
+  grid-row: 1 ;
+  border-radius: 12px;
  }
 
  .box3{
-  background: url(public/assets/iteration-2/cta/kart-3.png) 
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  background: url(public/assets/iteration-2/cta/kart-3.png) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  grid-column: 2 ;
+  grid-row: 2 ;
   color: #292929;
+  border-radius: 12px;
  }
 
  .btn-card {
   background: white;
-  color: black;
+  color: #ce2829;
   padding: 10px;
   border: none;
   cursor: pointer;
+  border-radius: 50px;
  }
 
  .box1 h1 {
@@ -299,8 +308,8 @@ font-size: 2rem;
 font-weight: 600;
 line-height: 2.8rem;
 text-align: left;
-color:black
- }
+color:black;
+}
 
  .red {
   color: #ce2829;
@@ -308,4 +317,30 @@ color:black
 
 
  /* TEXT-CONTAINER*/
- 
+
+ .text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+
+.text-container h3 {
+font-family: Satisfy;
+font-size: 2rem;
+font-weight: 400;
+line-height: 2.5rem;
+text-align: center;
+color: #ce2829;
+}
+
+.text-container h4 {
+font-family: Barlow;
+font-size: 2.5rem;
+font-weight: 600;
+line-height: 3.5 rem;
+text-align: center;
+}
+
+/* BUTTON-CONTAINER*/
