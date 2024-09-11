@@ -501,4 +501,38 @@ footer {
     border-radius: 12px;
     justify-content: space-between;
   }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .footer-middle {
+    width: 100%;
+  }
+  .instagram-gallery {
+    width: 100%;
+  }
+  .instagram-posts {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-bottomblock {
+    max-width: 27rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5rem 0;
 }
+
+}
+
+/* FINISH */
+/* I would like to thank and respect myself for my efforts. */
