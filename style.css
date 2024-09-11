@@ -285,6 +285,7 @@ a {
 
 .btn-card:hover {
   background: black;
+  color: white;
 }
 
 .btn-card:hover .btn-card-text {
